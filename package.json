@@ -1,0 +1,19 @@
+{
+  "name": "gutenberg-wp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "s": "npx wp-scripts start",
+    "b": "npx wp-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^30.0.2"
+  },
+  "dependencies": {
+    "@wordpress/blocks": "^13.8.0"
+  }
+}
