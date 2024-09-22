@@ -1,10 +1,6 @@
-import { registerBlockType } from "@wordpress/blocks";
+import { registerBlockType } from '@wordpress/blocks';
+import save from './modules/save';
+import edit from './modules/edit';
+import './style.scss';
 
-registerBlockType("dev/myblock", {
-  edit: () => {
-    return <h1 className="admin-title">Edit</h1>;
-  },
-  save: () => {
-    return <h1 className="admin-title">Save</h1>;
-  }
-});
+registerBlockType( 'dev/myblock', { edit, save } );

@@ -1,0 +1,1 @@
+{"version":3,"file":"./style-index.css","mappings":";;;AAAA;EACE;EACA;AACF,C","sources":["webpack://gutenberg-wp/./src/style.scss"],"sourcesContent":[".wp-block-dev-myblock {\n  font-size: 100px;\n  background: #5a5;\n}"],"names":[],"sourceRoot":""}

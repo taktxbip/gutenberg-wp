@@ -1,10 +1,12 @@
 {
-  "apiVersion": 2,
-  "name": "dev/myblock",
-  "title": "My Block",
-  "description": "Custom Gutenberg Block",
-  "category": "text",
-  "icon": "admin-customizer",
-  "textdomain": "myblock",
-  "editorScript": "file:./build/index.js"
+	"apiVersion": 2,
+	"name": "dev/myblock",
+	"title": "My Block",
+	"description": "Custom Gutenberg Block",
+	"category": "text",
+	"icon": "admin-customizer",
+	"textdomain": "myblock",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
 }

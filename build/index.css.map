@@ -1,0 +1,1 @@
+{"version":3,"file":"index.css","mappings":";;;AAAA;EACE;AACF,C","sources":["webpack://gutenberg-wp/./src/editor.scss"],"sourcesContent":[".wp-block-dev-myblock {\n  background: rgb(85, 88, 170);\n}"],"names":[],"sourceRoot":""}
