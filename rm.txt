@@ -1,0 +1,53 @@
+			{ 0 && (
+					<ToolbarGroup>
+						<p>btns</p>
+						<ToolbarButton
+							title="Align Left"
+							icon="editor-alignleft"
+							onClick={ () => console.log( 'align left' ) }
+						/>
+						<ToolbarButton
+							title="Align Center"
+							icon="editor-aligncenter"
+							onClick={ () => console.log( 'align center' ) }
+						/>
+						<ToolbarButton
+							title="Align Right"
+							icon="editor-alignright"
+							onClick={ () => console.log( 'align right' ) }
+						/>
+						<ToolbarDropdownMenu
+							icon="arrow-down-alt2"
+							label="More Options"
+							controls={ [
+								{
+									title: 'Button 1',
+									icon: 'admin-media',
+									isActive: true,
+									onClick: () => console.log( 'Button 1' ),
+								},
+								{
+									title: 'Button 2',
+									icon: 'admin-media',
+									isActive: true,
+									onClick: () => console.log( 'Button 2' ),
+								},
+							] }
+						/>
+					</ToolbarGroup>
+				) }
+
+
+
+
+
+        		<RichText
+				{ ...useBlockProps( {
+					className: `dev-align-${ align }`,
+				} ) }
+				tagName="h1"
+				value={ text }
+				onChange={ onChangeText }
+				placeholder="Enter title"
+				allowedFormats={ [ 'core/bold' ] }
+			/>

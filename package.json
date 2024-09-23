@@ -12,13 +12,22 @@
 		"s": "wp-scripts start",
 		"b": "wp-scripts build"
 	},
+	"stylelint": {
+		"extends": [
+			"@wordpress/stylelint-config/scss"
+		]
+	},
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@wordpress/scripts": "^30.0.2"
+		"@wordpress/eslint-plugin": "^21.1.2",
+		"@wordpress/scripts": "^30.0.2",
+		"@wordpress/stylelint-config": "^23.0.1"
 	},
 	"dependencies": {
 		"@wordpress/block-editor": "^14.3.0",
-		"@wordpress/blocks": "^13.8.0"
+		"@wordpress/blocks": "^13.8.0",
+		"@wordpress/components": "^28.8.0",
+		"@wordpress/i18n": "^5.8.0"
 	}
 }

@@ -1,12 +1,18 @@
 {
-	"apiVersion": 2,
-	"name": "dev/myblock",
-	"title": "My Block",
-	"description": "Custom Gutenberg Block",
-	"category": "text",
-	"icon": "admin-customizer",
-	"textdomain": "myblock",
-	"editorScript": "file:./build/index.js",
-	"editorStyle": "file:./build/index.css",
-	"style": "file:./build/style-index.css"
+  "apiVersion": 2,
+  "name": "dev/myblocks",
+  "title": "My Blocks",
+  "description": "Custom Gutenberg Block Parent",
+  "category": "text",
+  "icon": "universal-access-alt",
+  "textdomain": "myblocks",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css",
+  "attributes": {
+    "columns": {
+      "type": "number",
+      "default": 4
+    }
+  }
 }

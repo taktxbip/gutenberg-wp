@@ -1,4 +1,16 @@
 .wp-block-dev-myblock {
   font-size: 100px;
   background: #5a5;
+
+  &.dev-align-left {
+    text-align: left;
+  }
+
+  &.dev-align-right {
+    text-align: right;
+  }
+
+  &.dev-align-center {
+    text-align: center;
+  }
 }
