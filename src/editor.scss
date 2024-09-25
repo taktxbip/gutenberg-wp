@@ -1,3 +1,45 @@
-.wp-block-dev-myblock {
-  background: #f5f5f5;
+.wp-block-dev-myblocks {
+
+  @for $i from 1 through 4 {
+    &.cols-#{$i} {
+
+      .block-editor-block-list__layout {
+        display: grid;
+        grid-template-columns: repeat(#{$i}, 1fr);
+        gap: 4px;
+      }
+    }
+  }
+
+  [data-type="dev/item"] {
+    padding: 30px;
+    background-color: #f5f5f5;
+
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+
+    .image {
+      position: relative;
+      display: flex;
+
+      &.is-loading {
+
+        img {
+          opacity: 0.2;
+        }
+      }
+
+      .components-spinner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+      }
+    }
+  }
+
 }

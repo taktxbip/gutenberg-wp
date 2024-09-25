@@ -5,14 +5,38 @@
   font-size: 100px;
   background: #5a5;
 }
-.wp-block-dev-myblock.dev-align-left {
-  text-align: left;
+
+.wp-block-dev-myblocks.cols-1 {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 4px;
 }
-.wp-block-dev-myblock.dev-align-right {
-  text-align: right;
+.wp-block-dev-myblocks.cols-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4px;
 }
-.wp-block-dev-myblock.dev-align-center {
-  text-align: center;
+.wp-block-dev-myblocks.cols-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+}
+.wp-block-dev-myblocks.cols-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+.wp-block-dev-myblocks .wp-block-dev-item {
+  padding: 30px;
+  background-color: #f5f5f5;
+}
+.wp-block-dev-myblocks .wp-block-dev-item img {
+  width: 100%;
+  height: auto;
+}
+.wp-block-dev-myblocks .wp-block-dev-item h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style-index.css.map*/

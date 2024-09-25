@@ -34,6 +34,7 @@ function Edit( { attributes, setAttributes } ) {
 			<InnerBlocks
 				allowedBlocks={ [ 'dev/item' ] }
 				template={ [ [ 'dev/item' ], [ 'dev/item' ] ] }
+				orientation="horizontal"
 			/>
 		</div>
 	);

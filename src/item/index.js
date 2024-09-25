@@ -7,13 +7,28 @@ import SaveItem from './save-item';
 
 registerBlockType( 'dev/item', {
 	title: __( 'My Item', 'myblocks' ),
-	description: __( 'Child Item', 'myblocks' ),     
+	description: __( 'Child Item', 'myblocks' ),
 	parent: [ 'dev/myblocks' ],
 	supports: {
 		html: false,
 		reusable: false,
 	},
 	attributes: {
+		imageUrl: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'src',
+		},
+		imageAlt: {
+			type: 'string',
+			source: 'attribute',
+			selector: 'img',
+			attribute: 'alt',
+		},
+		imageId: {
+			type: 'number',
+		},
 		title: {
 			type: 'string',
 			source: 'html',
