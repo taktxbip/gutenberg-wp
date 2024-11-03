@@ -1,0 +1,22 @@
+{
+  "apiVersion": 2,
+  "name": "dev/latest-posts",
+  "title": "My Latest Posts",
+  "description": "My Latest Posts Block",
+  "category": "dev",
+  "icon": "schedule",
+  "textdomain": "myblocks",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "attributes": {
+    "postsPerPage": {
+      "type": "number",
+      "default": 2
+    },
+    "showImage": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

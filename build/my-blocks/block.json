@@ -3,12 +3,12 @@
   "name": "dev/myblocks",
   "title": "My Blocks",
   "description": "Custom Gutenberg Block Parent",
-  "category": "text",
+  "category": "dev",
   "icon": "universal-access-alt",
   "textdomain": "myblocks",
-  "editorScript": "file:./build/index.js",
-  "editorStyle": "file:./build/index.css",
-  "style": "file:./build/style-index.css",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
   "attributes": {
     "columns": {
       "type": "number",
