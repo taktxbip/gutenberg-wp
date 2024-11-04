@@ -295,6 +295,8 @@ module.exports = window["wp"]["i18n"];
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
+// This entry needs to be wrapped in an IIFE because it needs to be isolated against other modules in the chunk.
+(() => {
 /*!***************************!*\
   !*** ./src/item/index.js ***!
   \***************************/
@@ -313,6 +315,8 @@ __webpack_require__.r(__webpack_exports__);
   edit: _edit_item__WEBPACK_IMPORTED_MODULE_1__["default"],
   save: _save_item__WEBPACK_IMPORTED_MODULE_2__["default"]
 });
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map

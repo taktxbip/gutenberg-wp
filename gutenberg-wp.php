@@ -12,11 +12,19 @@
 function dev_latest_posts_block($attributes)
 {
 
-  $posts = get_posts([
+  $args = [
     'posts_per_page' => $attributes['postsPerPage'],
     'post_status' => 'publish',
-    'fields' => 'ids'
-  ]);
+    'fields' => 'ids',
+    'order' => $attributes['order'],
+    'orderby' => $attributes['orderBy']
+  ];
+
+  if (isset($attributes['category'])) {
+    $args['category__in'] = $attributes['category'];
+  }
+
+  $posts = get_posts($args);
 
   $html = '<div ' . get_block_wrapper_attributes() . '>';
   foreach ($posts as $post_id) {
